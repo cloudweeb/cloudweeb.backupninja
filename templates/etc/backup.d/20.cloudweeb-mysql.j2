@@ -1,0 +1,13 @@
+### {{ ansible_managed }}
+
+### backupninja mysql config ###
+databases = {{ backupninja_mysql_databases | join(" ") }}
+backupdir = {{ backupninja_mysql_backupdir }}
+sqldump = {{ backupninja_mysql_sqldump }}
+compress = {{ backupninja_mysql_compress }}
+sqldumpoptions = {{ backupninja_mysql_sqldumpoptions }}
+rotate = {{ backupninja_mysql_rotate }}
+
+### authentication ###
+configfile = {{ backupninja_mysql_configfile }}
+

@@ -1,0 +1,8 @@
+---
+backupninja_dependecies:
+  - bzip2
+  - backupninja
+  - duplicity
+  - rdiff-backup
+
+backupninja_libdirectory: /usr/libexec/backupninja

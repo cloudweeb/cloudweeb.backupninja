@@ -1,0 +1,20 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: backupninja
+  author: Agnesius Santo Naibaho
+  description: Backupninja Installation Role
+  company: "Cloudweeb"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.7
+  platforms:
+    - name: EL
+      versions:
+        - 7
+    - name: Debian
+      versions:
+        - stretch
+  galaxy_tags:
+    - backupninja
+    - backup

@@ -1,0 +1,25 @@
+---
+- name: Patch backupninja library
+  copy:
+    src: "backupninja/"
+    dest: "/usr/share/backupninja/"
+    owner: root
+    group: root
+
+- name: Configure backupninja backup job
+  template:
+    src: etc/backup.d/{{ item }}.j2
+    dest: /etc/backup.d/{{ item }}
+    owner: root
+    group: root
+    mode: 0600
+  loop: "{{ backupninja_enable_job }}"
+
+- name: Configure backupninja mysql auth
+  copy:
+    content: |
+      [client]
+      host = "{{ backupninja_mysql_host | default('localhost') }}"
+      user = "{{ backupninja_mysql_user | default('root') }}"
+      password = "{{ backupninja_mysql_pass | default() }}"
+    dest: "{{ backupninja_mysql_configfile }}"

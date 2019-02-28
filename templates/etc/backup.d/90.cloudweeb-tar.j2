@@ -1,0 +1,9 @@
+### {{ ansible_managed }}
+
+when = {{ backupninja_tar_when }}
+backupname = {{ backupninja_tar_backupname }}
+backupdir = {{ backupninja_tar_backupdir }}
+compress = {{ backupninja_tar_compression }} 
+rotate = {{ backupninja_tar_rotate }}
+includes = {{ backupninja_tar_includes | join(" ") }}
+excludes = {{ backupninja_tar_excludes | join(" ") }}
