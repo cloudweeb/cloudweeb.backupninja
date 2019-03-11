@@ -22,7 +22,7 @@ backupninja_enable_job:
   - 90.cloudweeb-tar
 
 # backupninja tar options
-backupninja_tar_when: everyday at 01
+backupninja_tar_when: "{{ backupninja_default_when }}"
 backupninja_tar_backupname: "{{ ansible_fqdn }}"
 backupninja_tar_backupdir: "{{ backupninja_main_backupdir }}/tar/{{ ansible_fqdn }}"
 backupninja_tar_compression: bzip
