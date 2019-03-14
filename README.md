@@ -1,7 +1,7 @@
 Ansible Role Backupninja
 =========
 
-[![Build Status](https://travis-ci.com/cloudweeb/ansible-role-backupninja.svg?branch=master)](https://travis-ci.com/cloudweeb/ansible-role-backupninja)
+[![Build Status](https://travis-ci.com/cloudweeb/cloudweeb.backupninja.svg?branch=master)](https://travis-ci.com/cloudweeb/cloudweeb.backupninja)
 
 Ansible role to install and configure Backupninja, based on [sigio.backupninja](https://github.com/sigio/ansible-role-backupninja) role
 
