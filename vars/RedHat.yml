@@ -2,7 +2,9 @@
 backupninja_dependecies:
   - bzip2
   - backupninja
+  - dialog
   - duplicity
+  - mailx
   - rdiff-backup
 
 backupninja_libdirectory: /usr/libexec/backupninja
